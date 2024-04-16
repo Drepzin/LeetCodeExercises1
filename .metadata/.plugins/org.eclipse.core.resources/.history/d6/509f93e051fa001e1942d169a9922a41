@@ -1,0 +1,28 @@
+package funcoesDeTest;
+
+public class LongComPre {
+	
+    public int[] plusOne(int[] digits) {
+    	
+    	int lastIndex = digits.length -1;
+    	while(digits.length >= 2 && digits[lastIndex] == 9) {
+    		digits[lastIndex -1] ++;
+    		digits[lastIndex] = 0;
+    		lastIndex--;
+    	}
+    	if(digits.length < 2) {
+    		digits[lastIndex] ++;
+    	}
+    	String temp = "";
+    	for(int i=0; i<digits.length; i++) {
+    		temp += Integer.toString(digits[i]);
+    	}
+    	int[] newDigits = new int[temp.length()];
+    	int k=0;
+    	while(k<temp.length()) {
+    		newDigits[k] = temp.charAt(k) - '0';
+    		k++;
+    	}
+    	return newDigits;
+    }
+}

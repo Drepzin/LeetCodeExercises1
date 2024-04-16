@@ -1,0 +1,6 @@
+package funcoesDeTest;
+
+public interface MostrarAlgo {
+
+	public void mostra();
+}

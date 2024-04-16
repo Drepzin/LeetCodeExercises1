@@ -1,0 +1,13 @@
+package funcoesDeTest;
+
+public class ProgMain {
+
+	public static void main(String[] args) {
+
+		int x = 12;
+		integerPalindrome inp = new integerPalindrome();
+		System.out.println(inp.isPalindrome(x));
+
+	}
+
+}

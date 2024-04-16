@@ -1,0 +1,16 @@
+package funcoesDeTest;
+
+public class ProgMain {
+
+	public static void main(String[] args) {
+
+		int[] n = {2,3,2,2,2,4,2,5,2,2,2,1};
+		leetCode1 lt = new leetCode1();
+		int[] result = lt.removeElement(n, 2);
+		for(int k: result) {
+			System.out.println(k);
+		}
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package funcoesDeTest;
+
+public class ProgMain {
+
+	public static void main(String[] args) {
+
+		int[] coisa = {1,2,4};
+		LongComPre lcp = new LongComPre();
+		System.out.println(lcp.plusOne(coisa));
+	}
+
+}

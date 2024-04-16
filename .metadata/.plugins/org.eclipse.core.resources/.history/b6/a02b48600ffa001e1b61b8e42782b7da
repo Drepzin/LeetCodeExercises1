@@ -1,0 +1,27 @@
+package funcoesDeTest;
+
+public class LongComPre {
+
+	public String commonLongestPrefix(String[] list) {
+		String common = "";
+		int minStLen = list[0].length();
+		for(int st=1; st<list.length; st++) {
+			if(minStLen < list[st].length()) {
+				minStLen = list[st].length();
+			}
+		}
+		for(int i=1; i<=list.length; i++) {
+			int k=0;
+			while(k<minStLen) {
+				if(list[0].charAt(0) != list[i].charAt(0)) {
+					return "";
+				}
+				else if(list[0].charAt(k) == list[i].charAt(k)) {
+						common += list[0].charAt(k);
+					}
+				k++;
+				}
+			}
+		return common;
+	}
+}

@@ -1,0 +1,7 @@
+package funcoesDeTest;
+
+@FunctionalInterface
+public interface MostrarAlgo {
+
+	public void mostra();
+}

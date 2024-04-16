@@ -1,0 +1,10 @@
+package funcoesDeTest;
+
+public class LongComPre {
+
+	public String commonLongestPrefix(String[] list) {
+		String common = "";
+		
+		return common;
+	}
+}

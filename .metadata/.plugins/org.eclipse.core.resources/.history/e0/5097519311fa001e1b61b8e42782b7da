@@ -1,0 +1,13 @@
+package funcoesDeTest;
+
+public class ProgMain {
+
+	public static void main(String[] args) {
+
+		String[] coisa = {"abelha", "abe", "abadier"};
+		LongComPre lcp = new LongComPre();
+		System.out.println(lcp.commonLongestPrefix(coisa));
+
+	}
+
+}

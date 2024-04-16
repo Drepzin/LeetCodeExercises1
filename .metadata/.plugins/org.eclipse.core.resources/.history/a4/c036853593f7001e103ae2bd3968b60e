@@ -1,0 +1,15 @@
+package funcoesDeTest;
+
+public class ProgMain {
+	
+	public static void main(String[] args) {
+		
+		MostrarAlgo ma = new MostrarAlgo() {
+			public void mostra() {
+				System.out.println("eae");
+			}
+		};
+		
+		ma.mostra();
+	}
+}

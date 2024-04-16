@@ -1,0 +1,21 @@
+package ExampleTest;
+
+public class integerPalindrome {
+	
+	public boolean isPalindrome(int x) {
+		if(x < 0) {
+			return false;
+		}
+		String num = Integer.toString(x);
+		int inicio = 0;
+		int fim = num.length() -1;
+		while(inicio<=fim) {
+			if(num.charAt(inicio) != num.charAt(fim)) {
+				return false;
+			}
+			inicio++;
+			fim--;
+		}
+		return true;
+	}
+}

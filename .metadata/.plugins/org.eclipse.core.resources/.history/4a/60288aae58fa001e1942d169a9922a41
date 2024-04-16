@@ -1,0 +1,26 @@
+package funcoesDeTest;
+
+public class LongComPre {
+	
+    public int[] plusOne(int[] digits) {
+    	int lastIndex = digits.length-1;
+    	for(int i=lastIndex; i>=0; i--) {
+    		if(digits[i] == 9) {
+    			digits[i]=0;
+    			if(i == 0) {
+    				int[] newDigits = new int[digits.length +1];
+    				newDigits[0] = 1;
+    				for(int n=1; n<digits.length; n++) {
+    					newDigits[n+1] = digits[n];
+    				}
+        			return newDigits;
+    			}
+    		}
+    		else {
+    			digits[i]++;
+    			break;
+    		}
+    	}
+    	return digits;
+    }
+}

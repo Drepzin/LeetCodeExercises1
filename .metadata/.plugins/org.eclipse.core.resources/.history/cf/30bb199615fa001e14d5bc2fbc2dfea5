@@ -1,0 +1,21 @@
+package funcoesDeTest;
+
+public class LongComPre {
+	
+    public int[] plusOne(int[] digits) {
+    	
+    	String temp = "";
+    	digits[digits.length -1] ++;
+    	for(int i=0; i<digits.length; i++) {
+    		temp += Integer.toString(digits[i]);
+    	}
+    	int[] newDigits = new int[temp.length()];
+    	int k=0;
+    	while(k<temp.length()) {
+    		newDigits[k] = temp.charAt(k) - '0';
+    		k++;
+    	}
+    	return newDigits;
+    	
+    }
+}

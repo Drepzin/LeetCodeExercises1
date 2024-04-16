@@ -1,0 +1,11 @@
+package funcoesDeTest;
+
+public class ProgMain {
+
+	public static void main(String[] args) {
+
+		String num = "99";
+		int num2 = Integer.parseInt(num);
+		System.out.println(num2++);
+		}
+	}
